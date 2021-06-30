@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mini Projects</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Image Filters</h1>
+        <canvas id="canvas"></canvas>
+
+        <h2 class="noMarginBottom">Load Image:</h2>
+        <input id="file" type="file" multiple="false" accept="image/*" onchange="loadImage()"/>
+
+        <h2 class="noMarginBottom">Choose Filter:</h2>
+        <div class="filters">
+            <input type="button" value="Red Filter" id="btnRed" onclick="makeRed()"/>
+            <input type="button" value="Rainbow Filter" id="btnRainbow" onclick="makeRainbow()"/>
+            <input type="button" value="Greyscale Filter" id="btnGrey" onclick="makeGrey()"/>
+            <input type="button" value="Blur Filter" id="btnBlur" onclick="makeBlur()"/>                        
+        </div>
+        <h2 class="noMarginBottom"> Reset Image Filter</h2>
+        <input type="button" value="Reset Image" id="btnReset" onclick="resetImage()"/>
+
+        <script src="https:www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
